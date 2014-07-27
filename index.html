@@ -72,7 +72,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <p>Next we remove predictors that have zero or near zero variance.</p>
 <pre class="r"><code>library(caret, quietly=T)
 dat &lt;- dat[-nearZeroVar(dat)]</code></pre>
-<p>Before we proceed we need to further refine our feature selection to those properties that most closely relate to predicting our outcome. After reviewing and comparing the meanDecreaseAccuracy and MeanDecreaseGini on the entire dataset at stage we took the primary modifiers that resulted in each column. Though this assuredly reduced our accuracy it enabled us to run the results in my limited hardware.</p>
+<p>Before we proceed we need to further refine our feature selection to those properties that most closely relate to predicting our outcome. After reviewing and comparing the meanDecreaseAccuracy and MeanDecreaseGini on the entire dataset at this stage we took the primary modifiers that resulted in the following columns. Though this assuredly reduced our accuracy it enabled us to run the results in my limited hardware.</p>
 <pre class="r"><code>cols &lt;- c(6, 7, 8, 9, 41, 44, 45, 46, 47, 59)
 names(dat)[cols]</code></pre>
 <pre><code>##  [1] &quot;num_window&quot;        &quot;roll_belt&quot;         &quot;pitch_belt&quot;       
@@ -80,7 +80,7 @@ names(dat)[cols]</code></pre>
 ##  [7] &quot;magnet_dumbbell_z&quot; &quot;roll_forearm&quot;      &quot;pitch_forearm&quot;    
 ## [10] &quot;classe&quot;</code></pre>
 <pre class="r"><code>dat &lt;- dat[,cols]</code></pre>
-<p>Finally, we need to divide up our training data into a test set before we run our model. We determined the top 9 factors by comparing the MeanDecreaseAccuracy and the MeanDecreaseGini lists using this call:</p>
+<p>Finally, we need to divide up our training data into a test set before we run our model.</p>
 <pre class="r"><code>library(caret, quietly=T)
 inTrain &lt;- createDataPartition(dat$classe, p=0.7, list=F)
 training &lt;- dat[inTrain,]
