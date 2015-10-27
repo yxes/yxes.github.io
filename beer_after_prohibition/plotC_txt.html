@@ -44,28 +44,28 @@
  <body>
   <div class="text_box">
    <p>
-    I was fully statisfied by with my creation of course, but others weren't
+    I was fully statisfied with my creation of course, but others weren't
     feeling the love. Complaints ran the gamut of the legend taking up too
-    much space while being too close to the data to the axis being too thick
+    much space while being too close to the data, to the axis being too thick
     and covering up the points in the first year.
    </p>
    <h3>Design Decision</h3>
    <p>
-    I squeezed the legend and moved to the far left so it would in no
-    way conflict with the data. I also reordered it to match the relative 
-    lines of the data. This made it much easier to link up the Northeast not
-    only by it's color but with location. After paring down the axis lines
-    to a more manageble level, I made them slighly opaque to allow the points
-    to show through. Since this is a time series it made a lot more sense
+    I squeezed the legend and moved it to the far left so it wouldn't
+    conflict with the data. I also reordered it to match the relative 
+    lines of the data. This made it much easier to look up the Northeast not
+    only by it's color but with location. After pairing down the axis lines
+    to a more manageble level, I made them slightly opaque to allow the points
+    to show through. Since this is a time series, it made more sense
     to link our points with lines. I was certain this would appease the
     masses.
    </p>
    <div class="button"><a href="plotC.html">VIEW</a></div>
    <p>
-    If you look closely you'll see a problem with the layout that I was unable
+    If you look closely, you'll see a problem with the layout that I was unable
     to fix.  In SVG the order in which you create an element determines the
     z-index (front &lt;-&gt; back) of the display. Though I was creating the 
-    axis early on in my code, the points still fall under the axis.
+    axis early on in my code, the points still fall behind the axis.
    </p>
   </div>
  </body>

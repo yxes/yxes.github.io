@@ -55,33 +55,31 @@
    </p>
    <h3>Design Decision</h3>
    <p>
-    The left axis really needed help but I was afraid that the plot would become
-    to "busy". I tried sketching out how the plot would look if I copied the 
+    The left axis really needed help, but I was afraid that the plot would become
+    too "busy". I tried sketching out how the plot would look if I copied the 
     labels to each side, but that detracts from the concept that the timeline has
-    a definite starting point but goes on from there. It doesn't solve the problem
+    a definite starting point and goes on from there. It doesn't solve the problem
     of how to reference the amounts. Another option was to just to remove the labels
-    on the left altogether. That didn't go over well either. In the end I had the
+    on the left altogether. That didn't go over well either. In the end, I had the
     labels extend as horizontal lines for reference points. I kept them dashed to
-    fade them into the background somewhat. 
+    fade them into the background somewhat.
   </p>
   <p>
     The result was a good looking plot with a hard-to-read legend. I ended up
-    placing a white rectangle as the background to my legend, just on top of 
-    my axis lines to hide them while going behind the legend. What I didn't realize
-    was that since my background was white that my rectagle wasn't vertically 
-    aligned well. A grey background highlights this well.
+    placing a white rectangle just behind the legend, on top of my axis lines to 
+    hide them. What I didn't realize was that since my background was white, 
+    my rectagle wasn't vertically aligned well. A grey background highlights this well.
    </p>
    <p>
-    I played with the opacity too and feedback from that went along the lines of
+    I played with the opacity too, and feedback from that went along the lines of
     <i>"I like that one better, but I can't say why"</i>, so it's slightly more
     faded than the previous version.
    </p>
    <div class="button"><a href="plotD.html">VIEW</a></div>
    <p>
     This is where the problem with the axis coming to the front of my points and
-    lines really became an issue. After a lot of "soul searching" (which involves
-    a lot of terms best used in a reglious environment) I discovered that you can 
-    set your axis path as a placeholder long before you actually draw it.
+    lines really became an issue. After a lot of "soul searching", I discovered that
+    you can set your axis path as a placeholder long before you actually draw it.
    </p>
   </div>
  </body>
