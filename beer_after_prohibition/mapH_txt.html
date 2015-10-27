@@ -1,0 +1,74 @@
+<html>
+
+ <head>
+       
+  <title>Map H</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Vollkorn">
+
+  <style>
+
+  body {
+     font-family: 'Vollkorn', serif;
+     font-size: 22px;
+  }
+
+  .text_box {
+     width: 600px;
+     margin: auto;
+  }
+
+  h3 {
+      text-align: center;
+  }
+
+  .button {
+      text-align: center;
+  }
+
+  .button a {
+      background: #2B6BCC;
+      background-image: -webkit-linear-gradient(top, #2B6BCC, #002459);
+      background-image: -moz-linear-gradient(top, #2B6BCC, #002459);
+      background-image: -ms-linear-gradient(top, #2B6BCC, #002459);
+      background-image: -o-linear-gradient(top, #2B6BCC, #002459);
+      background-image: linear-gradient(to bottom, #2B6BCC, #002459);
+      -webkit-border-radius: 28;
+      -moz-border-radius: 28;
+      border-radius: 28px;
+      font-family: Arial;
+      color: #FFF;
+      font-size: 10px;
+      padding: 10px 20px 10px 20px;
+      text-decoration: none;
+  }
+
+  .button hover {
+      background: #2B6BCC;
+      text-decoration: none;
+  }
+
+  </style>
+ </head>
+
+ <body>
+  <div class="text_box">
+   <p>
+    I'm sure you'll be as amazed as I was, but several people didn't
+    see how the two graphs were related. After my initial moment of
+    frustration and shock, I was asked if I could just make the lower
+    bar flash when you moused over the region. I have no idea... maybe?
+   </p>
+   <h3>Design Decision</h3>
+   <p>
+    Pull the yellow color from the pint and have it change the current
+    color of the region and the bar below. In an effort to ensure that
+    it just "flashes", I used a timeout in combination with an onMouseOut
+    event. Keep in mind that each region is really a series of states
+    so the on mouse over event is tied to the states. If that's confusing
+    - it was for me too.
+   </p>
+   <div class="button"><a href="mapH.html">VIEW</a></div>
+  </div>
+ </body>
+
+</html>

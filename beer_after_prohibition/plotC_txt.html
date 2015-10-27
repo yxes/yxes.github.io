@@ -1,0 +1,73 @@
+<html>
+
+ <head>
+  <title>Plot A</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Vollkorn">
+  <style>
+  body {
+     font-family: 'Vollkorn', serif;
+     font-size: 22px;
+  }
+  .text_box {
+     width: 600px;
+     margin: auto;
+  }
+  h3 {
+      text-align: center;
+  }
+  .button {
+      text-align: center;
+  }
+  .button a {
+      background: #2B6BCC;
+      background-image: -webkit-linear-gradient(top, #2B6BCC, #002459);
+      background-image: -moz-linear-gradient(top, #2B6BCC, #002459);
+      background-image: -ms-linear-gradient(top, #2B6BCC, #002459);
+      background-image: -o-linear-gradient(top, #2B6BCC, #002459);
+      background-image: linear-gradient(to bottom, #2B6BCC, #002459);
+      -webkit-border-radius: 28;
+      -moz-border-radius: 28;
+      border-radius: 28px;
+      font-family: Arial;
+      color: #FFF;
+      font-size: 10px;
+      padding: 10px 20px 10px 20px;
+      text-decoration: none;
+  }
+  .button hover {
+      background: #2B6BCC;
+      text-decoration: none;
+  }
+  </style>
+ </head>
+
+ <body>
+  <div class="text_box">
+   <p>
+    I was fully statisfied by with my creation of course, but others weren't
+    feeling the love. Complaints ran the gamut of the legend taking up too
+    much space while being too close to the data to the axis being too thick
+    and covering up the points in the first year.
+   </p>
+   <h3>Design Decision</h3>
+   <p>
+    I squeezed the legend and moved to the far left so it would in no
+    way conflict with the data. I also reordered it to match the relative 
+    lines of the data. This made it much easier to link up the Northeast not
+    only by it's color but with location. After paring down the axis lines
+    to a more manageble level, I made them slighly opaque to allow the points
+    to show through. Since this is a time series it made a lot more sense
+    to link our points with lines. I was certain this would appease the
+    masses.
+   </p>
+   <div class="button"><a href="plotC.html">VIEW</a></div>
+   <p>
+    If you look closely you'll see a problem with the layout that I was unable
+    to fix.  In SVG the order in which you create an element determines the
+    z-index (front &lt;-&gt; back) of the display. Though I was creating the 
+    axis early on in my code, the points still fall under the axis.
+   </p>
+  </div>
+ </body>
+
+</html>

@@ -1,0 +1,88 @@
+<html>
+
+ <head>
+       
+  <title>Map F</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Vollkorn">
+
+  <style>
+
+  body {
+     font-family: 'Vollkorn', serif;
+     font-size: 22px;
+  }
+
+  .text_box {
+     width: 600px;
+     margin: auto;
+  }
+
+  h3 {
+      text-align: center;
+  }
+
+  .button {
+      text-align: center;
+  }
+
+  .button a {
+      background: #2B6BCC;
+      background-image: -webkit-linear-gradient(top, #2B6BCC, #002459);
+      background-image: -moz-linear-gradient(top, #2B6BCC, #002459);
+      background-image: -ms-linear-gradient(top, #2B6BCC, #002459);
+      background-image: -o-linear-gradient(top, #2B6BCC, #002459);
+      background-image: linear-gradient(to bottom, #2B6BCC, #002459);
+      -webkit-border-radius: 28;
+      -moz-border-radius: 28;
+      border-radius: 28px;
+      font-family: Arial;
+      color: #FFF;
+      font-size: 10px;
+      padding: 10px 20px 10px 20px;
+      text-decoration: none;
+  }
+
+  .button hover {
+      background: #2B6BCC;
+      text-decoration: none;
+  }
+
+  </style>
+ </head>
+
+ <body>
+  <div class="text_box">
+   <p>
+    I finally started talking to some real beer drinkers. It seems that none of
+    them can imagine drinking a gallon of beer and instead want to "get a feel"
+    for the relative amount of drinking going on by seeing them in pints. A 
+    quick back of the napkin calculation states that since there's 8 pints in
+    a gallon and 52 weeks in year I can easily display my values in pints. Of
+    couse that's too easy, I have to make this harder for myself...
+   </p>
+   <h3>Design Decision</h3>
+   <p>
+    Start by adding a nice label and my first actual, d3 image - the pint. I
+    placed one in each region and then displayed the values next to it. Though
+    it was nice having an image it wasn't enough, I wanted to scale it.
+   </p>
+   <p>
+    I made a rookie mistake thinking that I could start with a base value and 
+    just display the width and height as a multiple of that value. For example, 
+    the width woulud be 1.5 * the base amount. This threw my images
+    into chaos as they were definitely not to scale. Here's the right way to
+    do it. Calculate the area first and then take the square root of that number.
+    Now you can ensure the correct height and width values. We also have
+    a pretty graphic that seems to move on the page as you run through the 
+    animation.
+   </p>
+   <div class="button"><a href="mapF.html">VIEW</a></div>
+   <p>
+    At first I was ensuring that the pint images always stayed in place by
+    calculating their size and changing the X and Y values accordingly. No one
+    liked that and though I was impressed with the code, I removed it.
+   </p>
+  </div>
+ </body>
+
+</html>

@@ -1,0 +1,70 @@
+<html>
+
+ <head>
+  <title>Plot F</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Vollkorn">
+  <style>
+  body {
+     font-family: 'Vollkorn', serif;
+     font-size: 22px;
+  }
+  .text_box {
+     position: relative;
+     top: 40%;
+     transform: translateY(-60%);
+     width: 600px;
+     margin: auto;
+  }
+  h3 {
+      text-align: center;
+  }
+  .button {
+      text-align: center;
+  }
+  .button a {
+      background: #2B6BCC;
+      background-image: -webkit-linear-gradient(top, #2B6BCC, #002459);
+      background-image: -moz-linear-gradient(top, #2B6BCC, #002459);
+      background-image: -ms-linear-gradient(top, #2B6BCC, #002459);
+      background-image: -o-linear-gradient(top, #2B6BCC, #002459);
+      background-image: linear-gradient(to bottom, #2B6BCC, #002459);
+      -webkit-border-radius: 28;
+      -moz-border-radius: 28;
+      border-radius: 28px;
+      font-family: Arial;
+      color: #FFF;
+      font-size: 10px;
+      padding: 10px 20px 10px 20px;
+      text-decoration: none;
+  }
+  .button hover {
+      background: #2B6BCC;
+      text-decoration: none;
+  }
+  </style>
+ </head>
+
+ <body>
+  <div class="text_box">
+   <p>
+    Everyone was satisfied at this point and I'm finally done, but this D3
+    and for my own worth, I need to show off a little...
+   </p>
+   <h3>Design Decision</h3>
+   <p>
+    I want a mouseover event that displays the number above each point. This
+    turns out to be much more difficult than it seemed at first. I want the
+    numbers to display above each point at you mouse over it but we have to 
+    take in the length of the number to display it correctly. I also found
+    that when the points were close together it hard to tell which point
+    that was selected. So now when you mouseover it doubles the size of the
+    point.
+   </p>
+   <div class="button"><a href="plotF.html">Final Plot</a></div>
+   <p>
+   I added a label to the axes. <i>(which is the only word in English that is
+   the plural of three different singular noun forms - ax, axe and axis)</i>
+  </div>
+ </body>
+
+</html>

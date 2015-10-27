@@ -1,0 +1,98 @@
+<html>
+<head>
+  <title>Frames Test</title>
+  <style>
+   body {
+      background: white;
+   }
+   h3 {
+      text-align: center;
+   }
+   .menu {
+      float:left;
+      width:200px;
+      height:80%;
+   }
+   .button {
+      background: #2B6BCC;
+      background-image: -webkit-linear-gradient(top, #2B6BCC, #002459);
+      background-image: -moz-linear-gradient(top, #2B6BCC, #002459);
+      background-image: -ms-linear-gradient(top, #2B6BCC, #002459);
+      background-image: -o-linear-gradient(top, #2B6BCC, #002459);
+      background-image: linear-gradient(to bottom, #2B6BCC, #002459);
+      -webkit-border-radius: 28;
+      -moz-border-radius: 28;
+      border-radius: 28px;
+      font-family: Arial;
+      color: #FFF;
+      font-size: 10px;
+      padding: 10px 20px 10px 20px;
+      text-decoration: none;
+      margin: 20px;
+   }
+   .menu ul {
+      list-style-type: none;
+      margin: 0px;
+   }
+  .menu li {
+      padding: 10px;
+  }
+  .button a:hover{
+      background: #2B6BCC;
+      text-decoration: none;
+  }
+  .highlighted {
+      background: #EFAA0B;
+      text-decoration: none;
+  }
+  </style>
+  <script language="javascript">
+   <!--
+    function selectme(me) {
+        // remove "highlighted" class from all others
+        var sel = document.getElementsByClassName("highlighted");
+        for (var i = 0; i < sel.length; i++) {
+            sel[i].className = sel[i].className.replace( /(?:^|\s)highlighted(?!\S)/g, '');
+        }
+
+        me.className += " highlighted";
+    }
+   // -->
+  </script>
+ </head>
+ <body>
+    <iframe name="main" src="map.html" width="1200px" height="900px" frameBorder=0></iframe>
+  <div class="menu">
+   <h3>Plot</h3>
+   <ul>
+    <li><a href="plot.html" target="main" class="button" onClick="return selectme(this);">final</a></li>
+    <li><a href="plotA_txt.html" target="main" class="button" onClick="return selectme(this);">Plot: Start</a></li>
+    <li><a href="plotB_txt.html" target="main" class="button" onClick="return selectme(this);">Plot: 1st</a></li>
+    <li><a href="plotC_txt.html" target="main" class="button" onClick="return selectme(this);">Plot: 2nd</a></li>
+    <li><a href="plotD_txt.html" target="main" class="button" onClick="return selectme(this);">Plot: 3rd</a></li>
+    <li><a href="plotE_txt.html" target="main" class="button" onClick="return selectme(this);">Plot: 4th</a></li>
+    <li><a href="plotF_txt.html" target="main" class="button" onClick="return selectme(this);">Plot: 5th</a></li>
+   </ul>
+
+   <h3 style="align: center">Map</h3>
+   <ul>
+    <li><a href="map.html" target="main" class="button" onClick="return selectme(this);">final</a></li>
+    <li><a href="mapA_txt.html" target="main" class="button" onClick="return selectme(this);">Map: Start</a></li>
+    <li><a href="mapB_txt.html" target="main" class="button" onClick="return selectme(this);">Map: 1st</a></li>
+    <li><a href="mapC_txt.html" target="main" class="button" onClick="return selectme(this);">Map: 2nd</a></li>
+    <li><a href="mapD_txt.html" target="main" class="button" onClick="return selectme(this);">Map: 3rd</a></li>
+    <li><a href="mapE_txt.html" target="main" class="button" onClick="return selectme(this);">Map: 4th</a></li>
+    <li><a href="mapF_txt.html" target="main" class="button" onClick="return selectme(this);">Map: 5th</a></li>
+    <li><a href="mapG_txt.html" target="main" class="button" onClick="return selectme(this);">Map: 6th</a></li>
+    <li><a href="mapH_txt.html" target="main" class="button" onClick="return selectme(this);">Map: 7th</a></li>
+    <li><a href="mapI_txt.html" target="main" class="button" onClick="return selectme(this);">Map: 8th</a></li>
+   </ul>
+
+   <h3 style="align: center">Resources</h3>
+   <ul>
+    <li><a href="citations.html" target="main" class="button" onClick="return selectme(this);">Citations</a></li>
+    <li><a href="thanks.html" target="main" class="button" onClick="return selectme(this);">Thanks</a></li>
+   </ul>
+  </div>
+</body>
+</html>

@@ -96,8 +96,6 @@
     var ITERATION_TIME = 800, // initial automation
 	highlight = [], // placeholder
 	selected_year = '', // placeholder
-	EASTER_EGG_COMBO = [1944, 1949, 1937, 1941],
-	easter_egg_picks = [], // for the easter egg to kick in
         WIDTH = 1200,
         HEIGHT = 700,
         REGIONS = {
@@ -603,14 +601,6 @@
                                }
 
                                selected_year = year;
-
-                               easter_egg_picks.push(year);
-			       if (easter_egg_picks.length == EASTER_EGG_COMBO.length &&
-			           easter_egg_picks.every(function(element, idx) {
-				       return element === EASTER_EGG_COMBO[idx];
-				   })) {
-				   window.location = "process.html";
-			       }
 
                                // highlight selected year
 			       d3.select(me)
