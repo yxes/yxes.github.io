@@ -1,0 +1,82 @@
+<html>
+
+ <head>
+       
+  <title>Map J</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Vollkorn">
+
+  <style>
+
+  body {
+     font-family: 'Vollkorn', serif;
+     font-size: 22px;
+  }
+
+  .text_box {
+     width: 600px;
+     margin: auto;
+  }
+
+  h3 {
+      text-align: center;
+  }
+
+  .button {
+      text-align: center;
+  }
+
+  .button a {
+      background: #2B6BCC;
+      background-image: -webkit-linear-gradient(top, #2B6BCC, #002459);
+      background-image: -moz-linear-gradient(top, #2B6BCC, #002459);
+      background-image: -ms-linear-gradient(top, #2B6BCC, #002459);
+      background-image: -o-linear-gradient(top, #2B6BCC, #002459);
+      background-image: linear-gradient(to bottom, #2B6BCC, #002459);
+      -webkit-border-radius: 28;
+      -moz-border-radius: 28;
+      border-radius: 28px;
+      font-family: Arial;
+      color: #FFF;
+      font-size: 10px;
+      padding: 10px 20px 10px 20px;
+      text-decoration: none;
+  }
+
+  .button hover {
+      background: #2B6BCC;
+      text-decoration: none;
+  }
+
+  </style>
+ </head>
+
+ <body>
+  <div class="text_box">
+   <p>
+    Code Cleanup
+   </p>
+   <h3>Design Decision</h3>
+   <p>
+   Implemented <a href="https://google.github.io/styleguide/javascriptguide.xml">Google's Style Guide for JS</a>.
+   </p>
+   <div class="button"><a href="map.html">VIEW</a></div>
+   <p>
+   A Udacity reviewer determined that this graphic didn't meet the minimum requirements. Specifically,
+   <blockquote>
+    The visualization is an explanatory graphic. It communicates a clear finding or relationship in the data.
+    Design choices foster communication between the reader and the visualization.
+   </blockquote>
+   Suggestions for improvement were as follows:
+   <blockquote>
+    <ol>
+     <li>Work in your visualization's design to make it explanatory and force viewer to identify the story it pretends to convey. For example: maps are good to identify differences between regions when region's color is categorized by alcohol consumption, this helps viewers to recognize the differences quickly. Currently color is not related with alcohol consumption and so these differences are not so evident for viewers. Time series are better represented in line charts, trends are not so evident in maps.</li>
+     <li>Include the main drivers of the alcohol consumption in your visualization, this is something you do in your line chart, but as previously mentioned, since the selected period is so small, it is difficult to recognize a clear pattern. In the map case, viewers can recognize the differences between states (although it is not well encoded since region color is not related with alcohol consumption), but the main drivers for those differences are not included.</li>
+    </ol>
+   </blockquote>
+   So the next question was how to implement the qualities of a line graph for time series as a central premise of
+   my map while introducing colors that show off the yearly values.
+   </p>
+  </div>
+ </body>
+
+</html>

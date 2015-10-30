@@ -1,0 +1,77 @@
+<html>
+
+ <head>
+       
+  <title>Map L</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Vollkorn">
+
+  <style>
+
+  body {
+     font-family: 'Vollkorn', serif;
+     font-size: 22px;
+  }
+
+  .text_box {
+     width: 600px;
+     margin: auto;
+  }
+
+  h3 {
+      text-align: center;
+  }
+
+  .button {
+      text-align: center;
+  }
+
+  .button a {
+      background: #2B6BCC;
+      background-image: -webkit-linear-gradient(top, #2B6BCC, #002459);
+      background-image: -moz-linear-gradient(top, #2B6BCC, #002459);
+      background-image: -ms-linear-gradient(top, #2B6BCC, #002459);
+      background-image: -o-linear-gradient(top, #2B6BCC, #002459);
+      background-image: linear-gradient(to bottom, #2B6BCC, #002459);
+      -webkit-border-radius: 28;
+      -moz-border-radius: 28;
+      border-radius: 28px;
+      font-family: Arial;
+      color: #FFF;
+      font-size: 10px;
+      padding: 10px 20px 10px 20px;
+      text-decoration: none;
+  }
+
+  .button hover {
+      background: #2B6BCC;
+      text-decoration: none;
+  }
+
+  </style>
+ </head>
+
+ <body>
+  <div class="text_box">
+   <p>
+    The colors on this map now need to do two things, they need to 
+    not only reveal the region, but they need to conform to the
+    values to reveal the amounts from each value. The problem with
+    choosing one scheme over the other is that you loose the other.
+   </p>
+   <p>
+    The current design can hide a region if the two values are very
+    close together. This is especially problematic if the two regions
+    are next to each other on the map.
+   </p>
+   <h3>Design Decision</h3>
+   <p>
+    I combined the two formats. First I ranked the regions by value
+    and then plugged in the colors according to those rankings. This
+    ensured that each of the colors show off the region as well as
+    the ranking of the values.
+   </p>
+   <div class="button"><a href="index2.html">VIEW</a></div>
+  </div>
+ </body>
+
+</html>

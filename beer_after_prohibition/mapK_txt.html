@@ -1,0 +1,81 @@
+<html>
+
+ <head>
+       
+  <title>Map K</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Vollkorn">
+
+  <style>
+
+  body {
+     font-family: 'Vollkorn', serif;
+     font-size: 22px;
+  }
+
+  .text_box {
+     width: 600px;
+     margin: auto;
+  }
+
+  h3 {
+      text-align: center;
+  }
+
+  .button {
+      text-align: center;
+  }
+
+  .button a {
+      background: #2B6BCC;
+      background-image: -webkit-linear-gradient(top, #2B6BCC, #002459);
+      background-image: -moz-linear-gradient(top, #2B6BCC, #002459);
+      background-image: -ms-linear-gradient(top, #2B6BCC, #002459);
+      background-image: -o-linear-gradient(top, #2B6BCC, #002459);
+      background-image: linear-gradient(to bottom, #2B6BCC, #002459);
+      -webkit-border-radius: 28;
+      -moz-border-radius: 28;
+      border-radius: 28px;
+      font-family: Arial;
+      color: #FFF;
+      font-size: 10px;
+      padding: 10px 20px 10px 20px;
+      text-decoration: none;
+  }
+
+  .button hover {
+      background: #2B6BCC;
+      text-decoration: none;
+  }
+
+  </style>
+ </head>
+
+ <body>
+  <div class="text_box">
+   <p>
+    I started with nine colors derived from
+    <a href="https://github.com/mbostock/d3/blob/master/lib/colorbrewer/colorbrewer.js">ColorBrewer</a>
+    in the <i>Blues</i> section. I then displayed those colors based on the ranges (using every 1/2 point)
+    from the pints / week values.
+   <p>
+    Since the regional values are per capita, there's no statistical
+    value to combining them. However, reviewing the overall minimum
+    and maximum regional values might be a novel way to reconsider
+    the trends. This way I can display overall trends in a smaller
+    format. Without making the graph even larger, I opted to use this
+    new format as my input device. Using mouseover effects instead of
+    clicks allowed me to effectively make the trends more relevent.
+   </p>
+   <h3>Design Decision</h3>
+   <p>
+    I ended up removing the buttons, replacing it with mini-line
+    graph which I displayed vertically to allow everything to fit.
+    I overlayed major events in my input section and shaded them 
+    between the years to provide more emphasis, rather than just
+    the text on the right-size of the map.
+   </p>
+   <div class="button"><a href="mapK.html">VIEW</a></div>
+  </div>
+ </body>
+
+</html>
